@@ -43,7 +43,9 @@ def monthly_challenge_by_number(request, month):
 def monthly_challenge(request, month): #<month> from urls.py
     try:
         challenge_text = monthly_challenges[month]
-        return render(request, "challenges/challenge.html")
+        return render(request, "challenges/challenge.html", {
+            "text": challenge_text
+        })
         # response_data = render_to_string("challenges/challenge.html")
         # return HttpResponse(response_data)
     except:
