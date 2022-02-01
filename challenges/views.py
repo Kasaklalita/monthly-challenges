@@ -15,7 +15,7 @@ monthly_challenges = {
     "september": "september!",
     "october": "october!",
     "november": "november!",
-    "december": "december!"
+    "december": None
 }
 
 # Create your views here.
